@@ -9,16 +9,15 @@
 import UIKit
 
 class ActionTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var actionImage: UIImageView!
+    @IBOutlet weak var donatedProgress: UIProgressView!
+    @IBOutlet weak var actionDeadline: UILabel!
+    @IBOutlet weak var actionName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        actionImage.layer.cornerRadius = self.actionImage.frame.size.width / 2
+        actionImage.clipsToBounds = true
     }
 
 }

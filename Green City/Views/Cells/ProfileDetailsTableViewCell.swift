@@ -9,16 +9,13 @@
 import UIKit
 
 class ProfileDetailsTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var donationText: UILabel!
+    @IBOutlet weak var donationPicture: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        donationPicture.layer.cornerRadius = self.donationPicture.frame.size.width / 2
+        donationPicture.clipsToBounds = true
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

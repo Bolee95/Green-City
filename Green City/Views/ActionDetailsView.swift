@@ -8,28 +8,45 @@
 
 import UIKit
 
-class ActionDetailsView: UIViewController {
+class ActionDetailsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var actionPicture: UIImageView!
+    @IBOutlet weak var actionName: UILabel!
+    @IBOutlet weak var actionProgress: UIProgressView!
+    @IBOutlet weak var collectedMoney: UILabel!
+    @IBOutlet weak var neededMoney: UILabel!
+    @IBOutlet weak var donateButton: UIButton!
+    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var contributorsTableView: UITableView!
+    var actionNameString : String = ""
+    var clickedRow : Int = 0
+    
+    var actionDetailsViewModel = ActionDetailsViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        actionDetailsViewModel.actionDetailsView = self
+        contributorsTableView.delegate = self
+        contributorsTableView.dataSource = self
+        
+        actionPicture.layer.cornerRadius = self.actionPicture.frame.size.width / 2
+        actionPicture.clipsToBounds = true
+        
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        actionDetailsViewModel.donators.removeAll()
+        actionDetailsViewModel.loadInfo(name: actionNameString)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
+    @IBAction func donateButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "donateSegue", sender: nil)
+    }
+
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

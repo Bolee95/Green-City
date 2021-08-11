@@ -6,4 +6,13 @@
 //  Copyright © 2018 Bogdan Ilic. All rights reserved.
 //
 
-import Foundation
+extension ActionModel
+{
+}
+
+enum Status
+{
+    case STARTED
+    case INPROGRESS
+    case FINISHED
+}

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+protocol NetworkResponseProtocol {
+    func onSuccess(response : JSON, option: Int?)
+    func onFailure(error : String, option: Int?)
+}

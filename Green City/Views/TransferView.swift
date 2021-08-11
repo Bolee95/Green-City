@@ -10,26 +10,38 @@ import UIKit
 
 class TransferView: UIViewController {
 
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var scanCardButton: UIButton!
+    @IBOutlet weak var codeField: UITextField!
+    @IBOutlet weak var proceedCodeButton: UIButton!
+    var alertController : UIAlertController!
+    var transferViewModel = TransferViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        transferViewModel.transferView = self
+        loadingIndicator.stopAnimating()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func scanCardButtonPressed(_ sender: UIButton) {
+        showCardScanner()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showPaymentStatus(message : String, title: String)
+    {
+        loadingIndicator.stopAnimating()
+        alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: {
+            action in
+                self.alertController.dismiss(animated: true, completion: nil)
+            }
+        ))
+        self.present(alertController,animated: true)
     }
-    */
-
+    @IBAction func codeProceedButtonPressed(_ sender: UIButton) {
+        loadingIndicator.startAnimating()
+        transferViewModel.checkCode(code: codeField.text!)
+        
+    }
 }

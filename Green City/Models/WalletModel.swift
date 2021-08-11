@@ -7,8 +7,29 @@
 //
 
 import Foundation
-struct Wallet {
-    var holderEmail : String
-    var balance : Double
-    var lastUpdated : String
+import ObjectMapper
+
+class Wallet : Mappable
+{
+    var holderEmail : String?
+    var balance : Double?
+    var lastUpdated : String?
+    
+    
+    init(holderEmail : String, balance : Double, lastUpdated : String)
+    {
+        self.holderEmail = holderEmail
+        self.balance = balance
+        self.lastUpdated = lastUpdated
+    }
+    
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map)
+    {
+        holderEmail <- map["holderEmail"]
+        balance <- map["balance"]
+        lastUpdated <- map["lastUpdated"]
+    }
 }

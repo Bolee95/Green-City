@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import ObjectMapper
 
-//treba struct
-class AddressModel {
+struct Address : Codable,Mappable
+{
     var city : String
     var country : String
     var street : String?
@@ -20,5 +21,17 @@ class AddressModel {
         self.country = country
         self.street = street
         self.zip = zip
+    }
+    
+    init?(map: Map) {
+        self.city = ""
+        self.country = ""
+    }
+    
+    mutating func mapping(map: Map) {
+        self.city <- map["city"]
+        self.country <- map["country"]
+        self.street <- map["street"]
+        self.zip <- map["zip"]
     }
 }

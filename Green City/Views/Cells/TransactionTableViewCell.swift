@@ -9,16 +9,15 @@
 import UIKit
 
 class TransactionTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var dateField: UILabel!
+    @IBOutlet weak var ammountField: UILabel!
+    @IBOutlet weak var transactionID: UILabel!
+    @IBOutlet weak var transactImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        //rounded image
+        transactImage.layer.cornerRadius = self.transactImage.frame.size.width / 2
+        transactImage.clipsToBounds = true
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

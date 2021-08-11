@@ -8,28 +8,34 @@
 
 import UIKit
 
-class ProfileView: UIViewController {
+class ProfileView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var donationsTableView: UITableView!
+    @IBOutlet weak var userProfile: UIImageView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var numOfDonationField: UILabel!
+    @IBOutlet weak var userCity: UILabel!
+    @IBOutlet weak var goBackButton: UIButton!
+    
+    
+    var userEmail : String = ""
+    var profileViewModel  = ProfileViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        donationsTableView.delegate = self
+        donationsTableView.dataSource = self
+        profileViewModel.profileView = self
+        profileViewModel.loadUserData(email: userEmail)
         // Do any additional setup after loading the view.
+        
+        
+        userProfile.layer.cornerRadius = self.userProfile.frame.size.width / 2
+        userProfile.clipsToBounds = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func goBackButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

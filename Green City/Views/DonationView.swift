@@ -10,26 +10,42 @@ import UIKit
 
 class DonationView: UIViewController {
 
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var donatorEmailField: UILabel!
+    @IBOutlet weak var actionNameField: UILabel!
+    @IBOutlet weak var moneyDonatedField: UITextField!
+    @IBOutlet weak var commitButton: UIButton!
+    
+    var actionName : String = ""
+    var donationViewModel = DonationViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        donationViewModel.donationView = self
+        loadingIndicator.stopAnimating()
+        donatorEmailField.text = getCurrentUserEmail()
+        actionNameField.text = actionName
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    @IBAction func commitButtonPressed(_ sender: UIButton) {
+        loadingIndicator.startAnimating()
+        donationViewModel.performTransaction(actionName : actionName, donatorEmail: getCurrentUserEmail(), ammount : Double(moneyDonatedField.text!)!)
+    }
+    
+    func showTransactionStatus(message : String, title: String)
+    {
+        loadingIndicator.stopAnimating()
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: {
+            action in
+            self.dismiss(animated: true, completion: nil)
+        }
+        ))
+        self.present(alertController,animated: true)
+    }
 }

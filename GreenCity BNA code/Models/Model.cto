@@ -1,0 +1,115 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+namespace org.GreenCity
+
+/**
+* definition of User participant in network
+*/
+participant User identified by email
+{
+  o String email
+  o String firstName
+  o String lastName
+  o Address address
+  o Double totalDonated
+  o ProfileType type optional
+  --> Wallet wallet 
+  o Donation[] donations optional
+}
+
+/**
+* wallet asset that holds balance 
+*/
+asset Wallet identified by holderEmail 
+{
+  o String holderEmail
+  o Double balance
+  o String lastUpdated
+}
+
+/**
+* definition of Event asset in network
+*/
+asset Action identified by name
+{
+  o String organiserEmail
+  o String name
+  o Double longitude
+  o Double latitude
+  o Address address
+  o String description
+  o Double moneyNeeded
+  o Status status
+  o String date
+  --> Wallet wallet
+  o Cheque[] contributors optional
+  o Boolean completed
+}
+
+/**
+* The type of User profile
+*/
+enum ProfileType
+{
+  o Greenie
+  o Curator
+  o Reviver
+}
+
+/**
+* The type of Event current status
+*/
+enum Status
+{
+  o Started
+  o InProgress
+  o Finished
+}
+
+/**
+ * A concept for a simple street address
+ */
+concept Address {
+  o String city
+  o String country
+  o String street optional
+  o String zip optional
+}
+
+/** 
+* A concept for a simple info about donator email and ammount donated
+*/
+concept Cheque {
+  o String contributorEmail
+  o Double ammount
+}
+
+/**
+* An  transaction that is related to Donation
+*/
+transaction Donation 
+{
+  o DateTime date
+  o Double ammount
+  --> User user
+  --> Action action
+}
+
+/**
+* Transaction that setup demo network
+*/
+transaction DemoSetup
+{
+}

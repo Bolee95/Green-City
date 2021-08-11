@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+
+class TransactionModel
+{
+    var transactionID : String?
+    var donatorName : String?
+    var trasactionDate : String?
+    
+    init(trasID: String, donator : String, date: String) {
+        self.transactionID = trasID
+        self.donatorName = donator
+        self.trasactionDate = date
+    }
+}

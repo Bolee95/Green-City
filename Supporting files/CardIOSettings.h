@@ -6,8 +6,10 @@
 //  Copyright © 2018 Bogdan Ilic. All rights reserved.
 //
 
-#ifndef cardIOSettings_h
-#define cardIOSettings_h
+#import "CardIO.h"
 
-
-#endif /* cardIOSettings_h */
+@import AudioToolbox;
+@import AVFoundation;
+@import CoreMedia;
+@import CoreVideo;
+@import MobileCoreServices;

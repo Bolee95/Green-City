@@ -3,16 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AF538632C2FC323ECDA5FAD /* Pods_Green_CityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870DF7F5911028918445A7CD /* Pods_Green_CityUITests.framework */; };
+		AE154AE3212F43FB00950676 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AE2212F43FB00950676 /* UserModel.swift */; };
+		AE154AE5212F479D00950676 /* AddressStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AE4212F479D00950676 /* AddressStruct.swift */; };
+		AE154AE7212F47C100950676 /* ActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AE6212F47C100950676 /* ActionModel.swift */; };
+		AE154AE9212F494300950676 /* ChequeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AE8212F494300950676 /* ChequeStruct.swift */; };
+		AE154AEB212F49A400950676 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AEA212F49A400950676 /* WalletModel.swift */; };
+		AE154AED212F4A2A00950676 /* DonactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AEC212F4A2A00950676 /* DonactionModel.swift */; };
+		AE154AEF212F4D3400950676 /* ApplicationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AEE212F4D3400950676 /* ApplicationStyle.swift */; };
+		AE154AF4212F508A00950676 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AF3212F508A00950676 /* UserRouter.swift */; };
+		AE154AF7212F53B000950676 /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154AF6212F53B000950676 /* ApplicationSettings.swift */; };
+		AE15F0E32155085700755840 /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15F0E22155085700755840 /* DonationView.swift */; };
+		AE15F0E521551DBF00755840 /* NewActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15F0E421551DBF00755840 /* NewActionViewModel.swift */; };
+		AE15F0E7215531AB00755840 /* ActionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15F0E6215531AB00755840 /* ActionDetailsViewModel.swift */; };
+		AE15F0E92155383700755840 /* ContributorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15F0E82155383700755840 /* ContributorTableViewCell.swift */; };
+		AE15F0EB215538CA00755840 /* ActionDetailViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15F0EA215538CA00755840 /* ActionDetailViewExtension.swift */; };
+		AE15F0ED2155487E00755840 /* DonationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15F0EC2155487E00755840 /* DonationViewModel.swift */; };
+		AE1CB557213038BB00A1C4D9 /* ActionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CB556213038BB00A1C4D9 /* ActionRouter.swift */; };
+		AE1CB559213039D200A1C4D9 /* DonationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CB558213039D200A1C4D9 /* DonationRouter.swift */; };
+		AE1CB55B21303C7500A1C4D9 /* WalletRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CB55A21303C7500A1C4D9 /* WalletRouter.swift */; };
+		AE1CB55F21303F9200A1C4D9 /* BusinessNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CB55E21303F9200A1C4D9 /* BusinessNetworkRouter.swift */; };
+		AE1CB5652130446200A1C4D9 /* UserExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CB5642130446200A1C4D9 /* UserExtension.swift */; };
+		AE1CB5672130469400A1C4D9 /* ActionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CB5662130469400A1C4D9 /* ActionExtension.swift */; };
 		AE2F0608211DF558003CB348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F0607211DF558003CB348 /* AppDelegate.swift */; };
-		AE2F060A211DF558003CB348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F0609211DF558003CB348 /* ViewController.swift */; };
+		AE2F060A211DF558003CB348 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F0609211DF558003CB348 /* LoginView.swift */; };
 		AE2F060D211DF558003CB348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F060B211DF558003CB348 /* Main.storyboard */; };
 		AE2F060F211DF55A003CB348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2F060E211DF55A003CB348 /* Assets.xcassets */; };
 		AE2F0612211DF55A003CB348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F0610211DF55A003CB348 /* LaunchScreen.storyboard */; };
 		AE2F061D211DF55A003CB348 /* Green_CityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F061C211DF55A003CB348 /* Green_CityUITests.swift */; };
+		AE5C5FEA21568B3600DA00DF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C5FE921568B3600DA00DF /* ProfileViewModel.swift */; };
+		AE5C5FEC2156BC2400DA00DF /* ProfileInfoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C5FEB2156BC2400DA00DF /* ProfileInfoExtension.swift */; };
+		AE5C5FEE2156BD4D00DA00DF /* ProfileDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C5FED2156BD4D00DA00DF /* ProfileDetailsTableViewCell.swift */; };
+		AEA36185215957A00018E148 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA36184215957A00018E148 /* SettingsView.swift */; };
+		AEA36187215957B30018E148 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA36186215957B30018E148 /* SettingsViewModel.swift */; };
+		AED194852152901E00992C26 /* MapPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED194842152901E00992C26 /* MapPinModel.swift */; };
+		AED194872152910F00992C26 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED194862152910F00992C26 /* MapView.swift */; };
+		AED19489215291E300992C26 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED19488215291E300992C26 /* MapViewModel.swift */; };
+		AED1948F2153118300992C26 /* ActionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1948E2153118300992C26 /* ActionDetailsView.swift */; };
+		AED4533D2150064700B5A0C0 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4533C2150064700B5A0C0 /* ActionView.swift */; };
+		AED453412150071200B5A0C0 /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED453402150071200B5A0C0 /* ActionTableViewCell.swift */; };
+		AED4534421500CBB00B5A0C0 /* ActionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4534321500CBB00B5A0C0 /* ActionViewExtension.swift */; };
+		AED4534621500D5500B5A0C0 /* ActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4534521500D5500B5A0C0 /* ActionViewModel.swift */; };
+		AED4534A2150103900B5A0C0 /* NetworkResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED453492150103900B5A0C0 /* NetworkResponseProtocol.swift */; };
+		AED4534C2150556C00B5A0C0 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4534B2150556C00B5A0C0 /* ContainerView.swift */; };
+		AED4534E215055B100B5A0C0 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4534D215055B100B5A0C0 /* ContainerViewModel.swift */; };
+		AED4535021505B1200B5A0C0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4534F21505B1200B5A0C0 /* ProfileView.swift */; };
+		AEE348F0213048B100D40B58 /* AddressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE348EF213048B100D40B58 /* AddressExtension.swift */; };
+		AEE348F421304F3800D40B58 /* WalletExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE348F321304F3800D40B58 /* WalletExtension.swift */; };
+		AEEE13152153D41C0091083D /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE13142153D41C0091083D /* TransactionTableViewCell.swift */; };
+		AEEE13172153D5360091083D /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE13162153D5360091083D /* TransactionsView.swift */; };
+		AEEE13192153D5660091083D /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE13182153D5660091083D /* TransactionsViewModel.swift */; };
+		AEEE131B2153D6850091083D /* TransactionsViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE131A2153D6850091083D /* TransactionsViewExtension.swift */; };
+		AEEE131E2153D9B70091083D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE131D2153D9B70091083D /* TransactionModel.swift */; };
+		AEEE13202153EBB60091083D /* NewActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE131F2153EBB60091083D /* NewActionView.swift */; };
+		AEEE13252153F7C70091083D /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE13242153F7C70091083D /* TransferView.swift */; };
+		AEEE13272153FDF80091083D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE2F0613211DF55A003CB348 /* Info.plist */; };
+		AEEE132C21540C700091083D /* TransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE132B21540C700091083D /* TransferViewModel.swift */; };
+		AEEE132E21540E5C0091083D /* TransferViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE132D21540E5C0091083D /* TransferViewExtension.swift */; };
+		AEF2060E214E9E2300EB207C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2060D214E9E2300EB207C /* LoginViewModel.swift */; };
+		AEF20610214EA38500EB207C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2060F214EA38500EB207C /* SignUpView.swift */; };
+		AEF20612214EAEF600EB207C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF20611214EAEF600EB207C /* SignUpViewModel.swift */; };
+		AEF95734214E974100E7CE07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEF95733214E974100E7CE07 /* GoogleService-Info.plist */; };
+		EED8B6661AED8614E6C24A7A /* Pods_Green_City.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E7076493FF123F5B174575 /* Pods_Green_City.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +82,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45ABC8C0D237F9F83AABB092 /* Pods-Green CityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green CityUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Green CityUITests/Pods-Green CityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		48E7076493FF123F5B174575 /* Pods_Green_City.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Green_City.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4F491E260F810EC43F1516 /* Pods-Green CityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green CityUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Green CityUITests/Pods-Green CityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80FBBB04C7F713B9B0018438 /* Pods-Green City.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green City.release.xcconfig"; path = "Pods/Target Support Files/Pods-Green City/Pods-Green City.release.xcconfig"; sourceTree = "<group>"; };
+		870DF7F5911028918445A7CD /* Pods_Green_CityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Green_CityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD7379B6F563EDBFFAFF986 /* Pods-Green City.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green City.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Green City/Pods-Green City.debug.xcconfig"; sourceTree = "<group>"; };
+		AE154AE2212F43FB00950676 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AE154AE4212F479D00950676 /* AddressStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressStruct.swift; sourceTree = "<group>"; };
+		AE154AE6212F47C100950676 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
+		AE154AE8212F494300950676 /* ChequeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChequeStruct.swift; sourceTree = "<group>"; };
+		AE154AEA212F49A400950676 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		AE154AEC212F4A2A00950676 /* DonactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonactionModel.swift; sourceTree = "<group>"; };
+		AE154AEE212F4D3400950676 /* ApplicationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStyle.swift; sourceTree = "<group>"; };
+		AE154AF3212F508A00950676 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		AE154AF6212F53B000950676 /* ApplicationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
+		AE15F0E22155085700755840 /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
+		AE15F0E421551DBF00755840 /* NewActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActionViewModel.swift; sourceTree = "<group>"; };
+		AE15F0E6215531AB00755840 /* ActionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDetailsViewModel.swift; sourceTree = "<group>"; };
+		AE15F0E82155383700755840 /* ContributorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorTableViewCell.swift; sourceTree = "<group>"; };
+		AE15F0EA215538CA00755840 /* ActionDetailViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDetailViewExtension.swift; sourceTree = "<group>"; };
+		AE15F0EC2155487E00755840 /* DonationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewModel.swift; sourceTree = "<group>"; };
+		AE1CB556213038BB00A1C4D9 /* ActionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRouter.swift; sourceTree = "<group>"; };
+		AE1CB558213039D200A1C4D9 /* DonationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationRouter.swift; sourceTree = "<group>"; };
+		AE1CB55A21303C7500A1C4D9 /* WalletRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRouter.swift; sourceTree = "<group>"; };
+		AE1CB55E21303F9200A1C4D9 /* BusinessNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessNetworkRouter.swift; sourceTree = "<group>"; };
+		AE1CB5642130446200A1C4D9 /* UserExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExtension.swift; sourceTree = "<group>"; };
+		AE1CB5662130469400A1C4D9 /* ActionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionExtension.swift; sourceTree = "<group>"; };
 		AE2F0604211DF558003CB348 /* Green City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2F0607211DF558003CB348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE2F0609211DF558003CB348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE2F0609211DF558003CB348 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AE2F060C211DF558003CB348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE2F060E211DF55A003CB348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2F0611211DF55A003CB348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +119,39 @@
 		AE2F0618211DF55A003CB348 /* Green CityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green CityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2F061C211DF55A003CB348 /* Green_CityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_CityUITests.swift; sourceTree = "<group>"; };
 		AE2F061E211DF55A003CB348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5C5FE921568B3600DA00DF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		AE5C5FEB2156BC2400DA00DF /* ProfileInfoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoExtension.swift; sourceTree = "<group>"; };
+		AE5C5FED2156BD4D00DA00DF /* ProfileDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		AEA36184215957A00018E148 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AEA36186215957B30018E148 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		AED194842152901E00992C26 /* MapPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinModel.swift; sourceTree = "<group>"; };
+		AED194862152910F00992C26 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AED19488215291E300992C26 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		AED1948E2153118300992C26 /* ActionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDetailsView.swift; sourceTree = "<group>"; };
+		AED4533C2150064700B5A0C0 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		AED453402150071200B5A0C0 /* ActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTableViewCell.swift; sourceTree = "<group>"; };
+		AED4534321500CBB00B5A0C0 /* ActionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewExtension.swift; sourceTree = "<group>"; };
+		AED4534521500D5500B5A0C0 /* ActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewModel.swift; sourceTree = "<group>"; };
+		AED453492150103900B5A0C0 /* NetworkResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseProtocol.swift; sourceTree = "<group>"; };
+		AED4534B2150556C00B5A0C0 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		AED4534D215055B100B5A0C0 /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
+		AED4534F21505B1200B5A0C0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AEE348EF213048B100D40B58 /* AddressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressExtension.swift; sourceTree = "<group>"; };
+		AEE348F321304F3800D40B58 /* WalletExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletExtension.swift; sourceTree = "<group>"; };
+		AEEE13142153D41C0091083D /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		AEEE13162153D5360091083D /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		AEEE13182153D5660091083D /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		AEEE131A2153D6850091083D /* TransactionsViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewExtension.swift; sourceTree = "<group>"; };
+		AEEE131D2153D9B70091083D /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		AEEE131F2153EBB60091083D /* NewActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActionView.swift; sourceTree = "<group>"; };
+		AEEE13242153F7C70091083D /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		AEEE132A2154091C0091083D /* GreenCity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GreenCity-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEEE132B21540C700091083D /* TransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewModel.swift; sourceTree = "<group>"; };
+		AEEE132D21540E5C0091083D /* TransferViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewExtension.swift; sourceTree = "<group>"; };
+		AEF2060D214E9E2300EB207C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AEF2060F214EA38500EB207C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AEF20611214EAEF600EB207C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AEF95733214E974100E7CE07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED8B6661AED8614E6C24A7A /* Pods_Green_City.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +167,114 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF538632C2FC323ECDA5FAD /* Pods_Green_CityUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E648B62C2130EC51D1937A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E7076493FF123F5B174575 /* Pods_Green_City.framework */,
+				870DF7F5911028918445A7CD /* Pods_Green_CityUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE154AE1212F437B00950676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEEE131C2153D99E0091083D /* Extra models */,
+				AEE348F521304F4300D40B58 /* Extension */,
+				AE154AE2212F43FB00950676 /* UserModel.swift */,
+				AE154AE6212F47C100950676 /* ActionModel.swift */,
+				AE154AEA212F49A400950676 /* WalletModel.swift */,
+				AE154AEC212F4A2A00950676 /* DonactionModel.swift */,
+				AE154AE4212F479D00950676 /* AddressStruct.swift */,
+				AE154AE8212F494300950676 /* ChequeStruct.swift */,
+				AED194842152901E00992C26 /* MapPinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE154AF0212F501D00950676 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AE154AF3212F508A00950676 /* UserRouter.swift */,
+				AE1CB556213038BB00A1C4D9 /* ActionRouter.swift */,
+				AE1CB558213039D200A1C4D9 /* DonationRouter.swift */,
+				AE1CB55A21303C7500A1C4D9 /* WalletRouter.swift */,
+				AE1CB55E21303F9200A1C4D9 /* BusinessNetworkRouter.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE154AF5212F538500950676 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AE154AEE212F4D3400950676 /* ApplicationStyle.swift */,
+				AE2F0607211DF558003CB348 /* AppDelegate.swift */,
+				AE2F060E211DF55A003CB348 /* Assets.xcassets */,
+				AE154AF6212F53B000950676 /* ApplicationSettings.swift */,
+				AED453492150103900B5A0C0 /* NetworkResponseProtocol.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		AE1CB5602130428E00A1C4D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AED4534221500CA400B5A0C0 /* Extensions */,
+				AED4533E215006D700B5A0C0 /* Cells */,
+				AE2F0609211DF558003CB348 /* LoginView.swift */,
+				AEF2060F214EA38500EB207C /* SignUpView.swift */,
+				AED4533C2150064700B5A0C0 /* ActionView.swift */,
+				AED4534B2150556C00B5A0C0 /* ContainerView.swift */,
+				AED4534F21505B1200B5A0C0 /* ProfileView.swift */,
+				AED194862152910F00992C26 /* MapView.swift */,
+				AED1948E2153118300992C26 /* ActionDetailsView.swift */,
+				AEEE13162153D5360091083D /* TransactionsView.swift */,
+				AEEE131F2153EBB60091083D /* NewActionView.swift */,
+				AEEE13242153F7C70091083D /* TransferView.swift */,
+				AE15F0E22155085700755840 /* DonationView.swift */,
+				AEA36184215957A00018E148 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE1CB563213042E600A1C4D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEF2060D214E9E2300EB207C /* LoginViewModel.swift */,
+				AEF20611214EAEF600EB207C /* SignUpViewModel.swift */,
+				AED4534521500D5500B5A0C0 /* ActionViewModel.swift */,
+				AED4534D215055B100B5A0C0 /* ContainerViewModel.swift */,
+				AED19488215291E300992C26 /* MapViewModel.swift */,
+				AEEE13182153D5660091083D /* TransactionsViewModel.swift */,
+				AEEE132B21540C700091083D /* TransferViewModel.swift */,
+				AE15F0E421551DBF00755840 /* NewActionViewModel.swift */,
+				AE15F0E6215531AB00755840 /* ActionDetailsViewModel.swift */,
+				AE15F0EC2155487E00755840 /* DonationViewModel.swift */,
+				AE5C5FE921568B3600DA00DF /* ProfileViewModel.swift */,
+				AEA36186215957B30018E148 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		AE2F05FB211DF558003CB348 = {
 			isa = PBXGroup;
 			children = (
+				AEEE132A2154091C0091083D /* GreenCity-Bridging-Header.h */,
+				AE2F0613211DF55A003CB348 /* Info.plist */,
+				AEF95733214E974100E7CE07 /* GoogleService-Info.plist */,
+				AE154AF5212F538500950676 /* Supporting files */,
 				AE2F0606211DF558003CB348 /* Green City */,
 				AE2F061B211DF55A003CB348 /* Green CityUITests */,
 				AE2F0605211DF558003CB348 /* Products */,
+				C6DDF0B23933481BFC67C666 /* Pods */,
+				1E648B62C2130EC51D1937A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +290,12 @@
 		AE2F0606211DF558003CB348 /* Green City */ = {
 			isa = PBXGroup;
 			children = (
-				AE2F0607211DF558003CB348 /* AppDelegate.swift */,
-				AE2F0609211DF558003CB348 /* ViewController.swift */,
+				AE154AE1212F437B00950676 /* Models */,
+				AE1CB563213042E600A1C4D9 /* ViewModels */,
+				AE1CB5602130428E00A1C4D9 /* Views */,
+				AE154AF0212F501D00950676 /* Networking */,
 				AE2F060B211DF558003CB348 /* Main.storyboard */,
-				AE2F060E211DF55A003CB348 /* Assets.xcassets */,
 				AE2F0610211DF55A003CB348 /* LaunchScreen.storyboard */,
-				AE2F0613211DF55A003CB348 /* Info.plist */,
 			);
 			path = "Green City";
 			sourceTree = "<group>";
@@ -96,6 +309,59 @@
 			path = "Green CityUITests";
 			sourceTree = "<group>";
 		};
+		AED4533E215006D700B5A0C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AED453402150071200B5A0C0 /* ActionTableViewCell.swift */,
+				AEEE13142153D41C0091083D /* TransactionTableViewCell.swift */,
+				AE15F0E82155383700755840 /* ContributorTableViewCell.swift */,
+				AE5C5FED2156BD4D00DA00DF /* ProfileDetailsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AED4534221500CA400B5A0C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AED4534321500CBB00B5A0C0 /* ActionViewExtension.swift */,
+				AEEE131A2153D6850091083D /* TransactionsViewExtension.swift */,
+				AEEE132D21540E5C0091083D /* TransferViewExtension.swift */,
+				AE15F0EA215538CA00755840 /* ActionDetailViewExtension.swift */,
+				AE5C5FEB2156BC2400DA00DF /* ProfileInfoExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEE348F521304F4300D40B58 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE1CB5662130469400A1C4D9 /* ActionExtension.swift */,
+				AEE348EF213048B100D40B58 /* AddressExtension.swift */,
+				AEE348F321304F3800D40B58 /* WalletExtension.swift */,
+				AE1CB5642130446200A1C4D9 /* UserExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AEEE131C2153D99E0091083D /* Extra models */ = {
+			isa = PBXGroup;
+			children = (
+				AEEE131D2153D9B70091083D /* TransactionModel.swift */,
+			);
+			path = "Extra models";
+			sourceTree = "<group>";
+		};
+		C6DDF0B23933481BFC67C666 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7379B6F563EDBFFAFF986 /* Pods-Green City.debug.xcconfig */,
+				80FBBB04C7F713B9B0018438 /* Pods-Green City.release.xcconfig */,
+				45ABC8C0D237F9F83AABB092 /* Pods-Green CityUITests.debug.xcconfig */,
+				5F4F491E260F810EC43F1516 /* Pods-Green CityUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +369,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE2F0621211DF55A003CB348 /* Build configuration list for PBXNativeTarget "Green City" */;
 			buildPhases = (
+				886745F0A778135C3E337FD2 /* [CP] Check Pods Manifest.lock */,
 				AE2F0600211DF558003CB348 /* Sources */,
 				AE2F0601211DF558003CB348 /* Frameworks */,
 				AE2F0602211DF558003CB348 /* Resources */,
+				45BF0CBA85688556ADC99D7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +388,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE2F0624211DF55A003CB348 /* Build configuration list for PBXNativeTarget "Green CityUITests" */;
 			buildPhases = (
+				DE55A6B8B60C781BC13C69F8 /* [CP] Check Pods Manifest.lock */,
 				AE2F0614211DF55A003CB348 /* Sources */,
 				AE2F0615211DF55A003CB348 /* Frameworks */,
 				AE2F0616211DF55A003CB348 /* Resources */,
@@ -146,15 +415,17 @@
 				TargetAttributes = {
 					AE2F0603211DF558003CB348 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 					AE2F0617211DF55A003CB348 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = AE2F0603211DF558003CB348;
 					};
 				};
 			};
 			buildConfigurationList = AE2F05FF211DF558003CB348 /* Build configuration list for PBXProject "Green City" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -178,7 +449,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2F0612211DF55A003CB348 /* LaunchScreen.storyboard in Resources */,
+				AEF95734214E974100E7CE07 /* GoogleService-Info.plist in Resources */,
 				AE2F060F211DF55A003CB348 /* Assets.xcassets in Resources */,
+				AEEE13272153FDF80091083D /* Info.plist in Resources */,
 				AE2F060D211DF558003CB348 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,13 +465,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45BF0CBA85688556ADC99D7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Green City/Pods-Green City-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Green City/Pods-Green City-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886745F0A778135C3E337FD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Green City-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE55A6B8B60C781BC13C69F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Green CityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE2F0600211DF558003CB348 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2F060A211DF558003CB348 /* ViewController.swift in Sources */,
+				AEEE131E2153D9B70091083D /* TransactionModel.swift in Sources */,
+				AEEE13202153EBB60091083D /* NewActionView.swift in Sources */,
+				AEE348F0213048B100D40B58 /* AddressExtension.swift in Sources */,
+				AE15F0EB215538CA00755840 /* ActionDetailViewExtension.swift in Sources */,
+				AE15F0E7215531AB00755840 /* ActionDetailsViewModel.swift in Sources */,
+				AEEE13192153D5660091083D /* TransactionsViewModel.swift in Sources */,
+				AE5C5FEE2156BD4D00DA00DF /* ProfileDetailsTableViewCell.swift in Sources */,
+				AE1CB557213038BB00A1C4D9 /* ActionRouter.swift in Sources */,
+				AEEE13172153D5360091083D /* TransactionsView.swift in Sources */,
+				AEEE132E21540E5C0091083D /* TransferViewExtension.swift in Sources */,
+				AED194852152901E00992C26 /* MapPinModel.swift in Sources */,
+				AE1CB55B21303C7500A1C4D9 /* WalletRouter.swift in Sources */,
+				AED4534A2150103900B5A0C0 /* NetworkResponseProtocol.swift in Sources */,
+				AED453412150071200B5A0C0 /* ActionTableViewCell.swift in Sources */,
+				AE154AE7212F47C100950676 /* ActionModel.swift in Sources */,
+				AE5C5FEC2156BC2400DA00DF /* ProfileInfoExtension.swift in Sources */,
+				AE5C5FEA21568B3600DA00DF /* ProfileViewModel.swift in Sources */,
+				AE154AE9212F494300950676 /* ChequeStruct.swift in Sources */,
+				AED4534C2150556C00B5A0C0 /* ContainerView.swift in Sources */,
+				AEEE13252153F7C70091083D /* TransferView.swift in Sources */,
+				AED4534E215055B100B5A0C0 /* ContainerViewModel.swift in Sources */,
+				AE1CB559213039D200A1C4D9 /* DonationRouter.swift in Sources */,
+				AE154AF7212F53B000950676 /* ApplicationSettings.swift in Sources */,
+				AE2F060A211DF558003CB348 /* LoginView.swift in Sources */,
+				AE15F0E92155383700755840 /* ContributorTableViewCell.swift in Sources */,
+				AED19489215291E300992C26 /* MapViewModel.swift in Sources */,
+				AE154AE5212F479D00950676 /* AddressStruct.swift in Sources */,
+				AE154AED212F4A2A00950676 /* DonactionModel.swift in Sources */,
+				AE154AEB212F49A400950676 /* WalletModel.swift in Sources */,
+				AE154AEF212F4D3400950676 /* ApplicationStyle.swift in Sources */,
+				AED4534621500D5500B5A0C0 /* ActionViewModel.swift in Sources */,
+				AED4533D2150064700B5A0C0 /* ActionView.swift in Sources */,
+				AEEE132C21540C700091083D /* TransferViewModel.swift in Sources */,
+				AE15F0E521551DBF00755840 /* NewActionViewModel.swift in Sources */,
+				AED4535021505B1200B5A0C0 /* ProfileView.swift in Sources */,
+				AE154AE3212F43FB00950676 /* UserModel.swift in Sources */,
+				AEF20612214EAEF600EB207C /* SignUpViewModel.swift in Sources */,
 				AE2F0608211DF558003CB348 /* AppDelegate.swift in Sources */,
+				AE154AF4212F508A00950676 /* UserRouter.swift in Sources */,
+				AE1CB55F21303F9200A1C4D9 /* BusinessNetworkRouter.swift in Sources */,
+				AEEE131B2153D6850091083D /* TransactionsViewExtension.swift in Sources */,
+				AED194872152910F00992C26 /* MapView.swift in Sources */,
+				AED4534421500CBB00B5A0C0 /* ActionViewExtension.swift in Sources */,
+				AE15F0E32155085700755840 /* DonationView.swift in Sources */,
+				AEF20610214EA38500EB207C /* SignUpView.swift in Sources */,
+				AE1CB5652130446200A1C4D9 /* UserExtension.swift in Sources */,
+				AED1948F2153118300992C26 /* ActionDetailsView.swift in Sources */,
+				AEE348F421304F3800D40B58 /* WalletExtension.swift in Sources */,
+				AEA36185215957A00018E148 /* SettingsView.swift in Sources */,
+				AE1CB5672130469400A1C4D9 /* ActionExtension.swift in Sources */,
+				AE15F0ED2155487E00755840 /* DonationViewModel.swift in Sources */,
+				AEEE13152153D41C0091083D /* TransactionTableViewCell.swift in Sources */,
+				AEF2060E214E9E2300EB207C /* LoginViewModel.swift in Sources */,
+				AEA36187215957B30018E148 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +677,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -291,12 +689,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "GreenCity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -339,69 +740,204 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OBJC_BRIDGING_HEADER = "GreenCity-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		AE2F0622211DF55A003CB348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD7379B6F563EDBFFAFF986 /* Pods-Green City.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WPS9B99AV;
-				INFOPLIST_FILE = "Green City/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"-ObjC",
+					"-l\"CardIO\"",
+					"-l\"c++\"",
+					"-l\"opencv_core\"",
+					"-l\"opencv_imgproc\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
 				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "BI.Green-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GreenCity-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AE2F0623211DF55A003CB348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FBBB04C7F713B9B0018438 /* Pods-Green City.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WPS9B99AV;
-				INFOPLIST_FILE = "Green City/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"-ObjC",
+					"-l\"CardIO\"",
+					"-l\"c++\"",
+					"-l\"opencv_core\"",
+					"-l\"opencv_imgproc\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
 				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "BI.Green-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GreenCity-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		AE2F0625211DF55A003CB348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45ABC8C0D237F9F83AABB092 /* Pods-Green CityUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WPS9B99AV;
 				INFOPLIST_FILE = "Green CityUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BI.Green-CityUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -412,16 +948,13 @@
 		};
 		AE2F0626211DF55A003CB348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4F491E260F810EC43F1516 /* Pods-Green CityUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WPS9B99AV;
 				INFOPLIST_FILE = "Green CityUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BI.Green-CityUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

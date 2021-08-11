@@ -10,15 +10,13 @@ import UIKit
 
 class ContributorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var donatedAmmount: UILabel!
+    @IBOutlet weak var donatorName: UILabel!
+    @IBOutlet weak var contributorImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        contributorImage.layer.cornerRadius = self.contributorImage.frame.size.width / 2
+        contributorImage.clipsToBounds = true
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

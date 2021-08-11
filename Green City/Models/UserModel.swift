@@ -17,8 +17,7 @@ class UserModel : Mappable
     var address : Address?
     var totalDonated : Double?
     var profileType : profileType?
-    var donations = [Donation]()
-    //var wallet : Wallet
+    var donations = [DonationModel]()
     
     init(firstName : String, lastName : String, email : String, address : Address) {
         self.firstName = firstName
@@ -37,10 +36,6 @@ class UserModel : Mappable
         firstName <- map["firstName"]
         lastName <- map["lastName"]
         email <- map["email"]
-        address!.country <- map["address.country"]
-        address!.city <- map["address.city"]
-        address!.zip <- map["address.zip"]
-        address!.zip <- map["address.street"]
         totalDonated <- map["totalDonated"]
     }
 }
